@@ -1,0 +1,8 @@
+{
+  "name": "Clinic Air and Refrigerator",
+  "description": "Official website for Clinic Air and Refrigerator",
+  "repository": "https://github.com/ClinicAir/MaiTai.git",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "clinicair/nodejs"
+}
