@@ -19,9 +19,9 @@ app.get('/cool', function(request, response) {
 });
 
 app.get('/times', function(request, response) {
-  var result = ''
-  var times = process.env.TIMES || 5
-  for (i=0; i < times; i ++) {
+  var result = '';
+  var times = process.env.TIMES || 5;
+  for (var i = 0; i < times; i ++) {
     result += i + ' ';
   }
   response.send(result);
@@ -41,11 +41,11 @@ app.get('/db', function (request, response) {
       else
       {
         response.render('pages/db', {
-          result: result.rows
+          results: result.rows
         });
       }
     });
-  })
+  });
 });
 
 app.listen(app.get('port'), function() {
