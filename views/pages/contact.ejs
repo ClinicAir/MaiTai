@@ -11,8 +11,9 @@
         padding: 0;
       }
       #map {
-        height: 100%;
-        padding: 50px;
+        max-height: 100%;
+        max-width: 100%;
+        border: 100px;
       }
     </style>
   </head>
@@ -24,7 +25,7 @@
         var myLatLng = {lat: -25.363, lng: 131.044};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 7,
           center: myLatLng
         });
 
