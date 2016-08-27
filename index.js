@@ -14,8 +14,20 @@ app.get('/', function(request, response) {
   response.render('pages/index');
 });
 
+app.get('/home', function(request, response) {
+  response.render('pages/home');
+});
+
+app.get('/selling', function(request, response) {
+  response.render('pages/selling');
+});
+
 app.get('/cool', function(request, response) {
   response.send(cool());
+});
+
+app.get('/contact', function(request, response) {
+  response.render('pages/contact');
 });
 
 app.get('/times', function(request, response) {
