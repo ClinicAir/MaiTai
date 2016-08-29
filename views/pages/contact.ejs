@@ -3,29 +3,29 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Simple markers</title>
+
+    <% include ../partials/genericheader.ejs %>
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
       #map {
-        max-height: 100%;
-        max-width: 100%;
-        border: 100px;
+        min-height: 75%;
+        min-width: 75%;
+        margin: 100px;
       }
     </style>
   </head>
   <body>
+    <% include ../partials/topnav.ejs %>
+    <div class="empty-header center-text">
+      <h1> Location </h1>
+      <h4> ซอย ศรีบำเพ็ญ พระราม 4 Thung Maha Mek, Sathon, Bangkok 10120 </h4>
+    </div>
     <div id="map">
     </div>
     <script>
       function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
-
+        var myLatLng = {lat: 13.719652, lng: 100.548784};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 7,
+          zoom: 13,
           center: myLatLng
         });
 

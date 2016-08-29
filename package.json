@@ -13,7 +13,9 @@
     "pg": "4.x",
     "cool-ascii-faces": "1.3.4",
     "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "body-parser": "1.15.2",
+    "nodemailer": "2.x"
   },
   "repository": {
     "type": "git",
