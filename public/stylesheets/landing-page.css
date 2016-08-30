@@ -298,16 +298,22 @@ p.copyright {
    min-width:100%;
    min-height:100%;
    padding-top: 50px;
+   padding-bottom: 50px;
    text-align: center;
    color: #f8f8f8;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
 
 video {
-    min-width:100%;
-    min-height:100%;
-    height:auto;
-    display:block;
+    filter: brightness(40%);
     -webkit-filter: brightness(40%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 textarea {
