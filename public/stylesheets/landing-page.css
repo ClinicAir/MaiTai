@@ -75,15 +75,20 @@ pre {
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    height: 100%;
+    width: 100%;
+    height: auto;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: #660000;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+}
+
+.intro-header > img {
+    width: 100%;
+    height: auto;
 }
 
 .intro-message {
@@ -128,8 +133,6 @@ pre {
 .intro-message > img {
     align-content: center;
     border: none !important;
-    width: 5em;
-    height: 5em;
     background-size: 5em;
 }
 
@@ -141,12 +144,18 @@ pre {
 
 @media(max-width:767px) {
     .intro-message {
-        padding-top: 30%;
+        padding-top: 25%;
         padding-bottom: 15%;
     }
 
-    .intro-message > h1 {
-        font-size: 3em;
+    .intro-message > h1,h2 {
+        font-size: 1.8em;
+        line-height: 25px;
+    }
+
+    .intro-message > h3,p {
+        font-size: 0.7em;
+        line-height: 15px;
     }
 
     ul.intro-social-buttons > li {
@@ -161,6 +170,15 @@ pre {
 
     .intro-divider {
         width: 100%;
+    }
+
+    .intro-message > img {
+        background-size: 2.5em;
+    }
+
+    .repair-icon {
+        margin: auto;
+        padding: 1.7em;
     }
 }
 
@@ -289,18 +307,18 @@ p.copyright {
     top:0;
     left:0;
     min-width: 100%;
-    min-height: 100%;
+    height: auto;
     z-index:1;
 }
 
 .backgroundVideo {
    margin:0 auto;
    min-width:100%;
-   min-height:100%;
+   height: auto;
    padding-top: 50px;
-   padding-bottom: 50px;
    text-align: center;
    color: #f8f8f8;
+   background-color: #777777;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -308,12 +326,9 @@ p.copyright {
 }
 
 video {
-    filter: brightness(40%);
+    width:100% !important;
+    height: auto !important;
     -webkit-filter: brightness(40%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 textarea {
